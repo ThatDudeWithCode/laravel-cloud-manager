@@ -15,8 +15,12 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+import VInput from './components/Input/VInput.vue';
+import VButton from './components/Buttons/VButton.vue';
+import VForm from './components/Form/VForm.vue';
+app.component('v-input', VInput);
+app.component('v-button', VButton);
+app.component('v-form', VForm);
 
 /**
  * The following block of code may be used to automatically register your
